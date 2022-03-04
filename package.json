@@ -8,7 +8,7 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx run-many --target=test --projects=nx-todo,api",
-    "test:e2e": "nx run-many --target=e2e --projects=nx-todo,api",
+    "test:e2e": "nx run api:serve & nx e2e nx-todo-e2e",
     "prepare": "husky install",
     "commit": "cz"
   },
